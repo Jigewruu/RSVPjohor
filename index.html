@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Haziq & Alya</title>
+    <style>
+        @font-face {
+            font-family: 'Recoleta-Bold';
+            src: url('Recoleta-Bold.woff2') format('woff2'),
+            url('Recoleta-Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Recoleta';
+            src: url('Recoleta-RegularDEMO.woff2') format('woff2'),
+            url('Recoleta-RegularDEMO.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'BrushScriptStd';
+            src: url('BrushScriptStd.woff2') format('woff2'),
+            url('BrushScriptStd.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+
+        body {
+            font-family: 'Recoleta-Bold', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 548px;
+            margin: 0 auto;
+            background: #fff;
+            /* padding: 20px; */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden; /* Ensures parallax content stays within container */
+        }
+        .header {
+            text-align: center;
+            
+        }
+        .header img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        .header p {
+            font-size: 18px;
+            color: #777;
+        }
+        .content {
+            /**/
+        }
+        .content img.main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            
+        }
+        .content img.floating-decoration {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
+            opacity: 0.5;
+        }
+        .content h2 {
+            font-size: 28px;
+            color: #e76f51;
+            margin: 10px 0;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+        .footer a {
+            color: #e76f51;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .jemputan{      
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            
+  width: 100%; /* Responsive width */
+  max-width: 1200px; /* Prevent it from getting too wide */
+  margin: 0 auto; /* Center the div */
+  box-sizing: border-box;
+        }
+        .jemputan img {
+            width: 45%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto; /* Centers the image horizontally and adds bottom margin */
+        }
+     
+
+.parallax-container {
+    position: relative;
+    height: 95vh; /* Full viewport height */
+    /* overflow: hidden; */
+}
+
+
+.parallax-background {
+  background-image: url('img_parallax.jpg'); /* Replace with your background image */
+  height: 150%; /* Larger than the viewport for parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 548;
+  width: 100%;
+}
+
+/* Adjust the background for mobile devices */
+@media (max-width: 768px) {
+  .parallax-background {
+    background-size: contain; /* Scale the image to fit the container */
+    height: 100%; /* Reduce height for mobile devices */
+  }
+}
+/* Responsive handling for smaller screens */
+@media (max-width: 768px) {
+  .jemputan {
+    padding: 10px;
+    font-size: small;
+  }
+}
+
+@media (max-width: 480px) {
+  .jemputan {
+    padding: 5px;
+    font-size: x-small;
+  }
+}
+/* Responsive iframe container */
+.responsive-iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* Centering container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Enables scrolling */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Background and invitation container */
+.invitation-container {
+    background-image: url('00.jpg'); /* Replace with your floral border image URL */
+    background-size: cover; /* Ensures the background covers the entire container area */
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 500px;
+    width: 100%;
+    min-height: 100vh; /* Ensures the container is scrollable */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.invitation-title {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Recoleta-Bold', sans-serif;
+    color: #2f4f6f;
+    margin: 0;
+}
+/* Floating button styling */
+#floatingButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.responsive-background {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* Aspect ratio (for example, 16:9) */
+    background-image: url('00.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop muted>
+        <source src="musik.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <div class="content">
+            <!-- Floating pause/play button -->
+            <button id="floatingButton" onclick="toggleMusic()" style="">&#10074;&#10074;</button> <!-- Initial icon for "pause" -->
+
+            <img src="01.jpg" alt="Couple's Photo" class="main-image">
+
+            
+            <div class="center-container">
+                <div class="invitation-container">
+                    <img src="02.jpg" alt="Couple's Photo" class="main-image">
+                    <img src="03.jpg" alt="Couple's Photo" class="main-image">
+                    <img id="RSVPed" src="04.jpg" alt="Couple's Photo" class="main-image">
+
+                    <form id="rsvpForm" action="https://docs.google.com/forms/d/e/1FAIpQLSeEwbyN4SNwzNdcnQOPJqtwHfklNHPBlewnuYkaZV0f_4aSgg/formResponse" 
+                        style="text-align: left; padding-left: 5%;" 
+                        method="post" 
+                        target="hidden_iframe" 
+                        onsubmit="submitForm();">
+                                            
+                        <p style="font-family: 'Recoleta', sans-serif;">
+                            <label> Nama Tetamu:<br />
+                                <input size="40" maxlength="400" name="entry.1469067133" type="text" id="namaTetamu" style="width: 303.29px;" />
+                            </label>
+                        </p>
+
+                        <p style="font-family: 'Recoleta', sans-serif;">
+                            <label> Nombor Telefon:<br />
+                                <input size="40" maxlength="400" name="entry.2111914565" type="tel" id="nomborTelefon" style="width: 303.29px;" inputmode="numeric" pattern="[0-9]*" />
+                            </label>
+                        </p>
+
+                        <p style="font-family: 'Recoleta', sans-serif;">Sahkan Kehadiran:</p>
+                        <p style="font-family: 'Recoleta', sans-serif;">
+                            <input type="radio" name="entry.1117005382" value="Ya" onclick="togglePax(true)" /> Hadir
+                            <br>
+                            <input type="radio" name="entry.1117005382" value="Tidak" onclick="togglePax(false)" /> Tidak Hadir
+                        </p>
+
+                        <p id="paxSection" style="display: none;font-family: 'Recoleta', sans-serif;">
+                            <label> Jumlah Kehadiran:<br />
+                                <select name="entry.614833023" style="width: 303.29px;">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </label>
+                        </p>
+
+                        <p><input type="submit" value="Hantar" /></p>
+                    </form>
+
+                    <!-- <form id="rsvpForm" action="https://docs.google.com/forms/d/e/1FAIpQLScXx8vGGc_zkAZsQplH0IXwC6i9gtX7j1h1Zsyuv_-CYwgsEQ/formResponse" style="text-align: left; padding-left: 5%;" method="post" target="hidden_iframe" onsubmit="submitForm();">
+
+                        <p style="font-family: 'Recoleta', sans-serif;">
+                            <label> Nama Tetamu:<br />
+                                <input size="40" maxlength="400" name="entry.1865320774" type="text" id="namaTetamu" style="width: 303.29px;" />
+                            </label>
+                        </p>
+                    
+                        <p style="font-family: 'Recoleta', sans-serif;">
+                            <label> Nombor Telefon:<br />
+                                <input size="40" maxlength="400" name="entry.187927479" type="tel" id="nomborTelefon" style="width: 303.29px;" inputmode="numeric" pattern="[0-9]*" />
+                            </label>
+                        </p>
+                    
+                        <p style="font-family: 'Recoleta', sans-serif;">Sahkan Kehadiran:</p>
+                        <p style="font-family: 'Recoleta', sans-serif;">
+                            <input type="radio" name="entry.915716620" value="Ya" onclick="togglePax(true)" /> Hadir
+                            <br>
+                            <input type="radio" name="entry.915716620" value="Tidak" onclick="togglePax(false)" /> Tidak Hadir
+                        </p>
+                    
+                        <p id="paxSection" style="display: none; font-family: 'Recoleta', sans-serif;">
+                            <label> Jumlah Kehadiran:<br />
+                                <select name="entry.569368382" style="width: 303.29px;">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                     <option value="3">3</option>
+                                    <option value="4">4</option> 
+                                </select>
+                            </label>
+                        </p>
+                    
+                        <p><input type="submit" value="Hantar" /></p>
+                    </form> -->
+                    <p style="font-weight: 600; font-size: medium;margin-top: 0px; font-family: 'Recoleta', sans-serif;"><u id="thanked"></u></p>
+                    
+                    <img src="05.jpg" alt="Couple's Photo" class="main-image">
+                    <a href="https://wa.link/npxu00" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536479.png" style="max-width: 12%;" alt="">
+                    </a>
+                    <a href="tel:+60 10-944 4524">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25377.png " style="max-width: 12%;" alt="">
+                    </a>
+                    <img src="06.jpg" alt="Couple's Photo" class="main-image">
+                    <a href="https://wa.link/58jy2f" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536479.png" style="max-width: 12%;" alt="">
+                    </a>
+                    <a href="tel:+60 17-756 2677">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25377.png " style="max-width: 12%;" alt="">
+                    </a>
+                    <img src="07.jpg" alt="Couple's Photo" class="main-image">
+                    <a href="https://wa.link/8cej6k" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536479.png" style="max-width: 12%;" alt="">
+                    </a>
+                    <a href="tel:+60 13-780 9235">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25377.png " style="max-width: 12%;" alt="">
+                    </a>
+                    <img src="08.jpg" alt="Couple's Photo" class="main-image">
+                    
+                </div>
+            </div>
+
+            <div class="responsive-iframe-container" style="display: none;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-yxaNpmHWMcMB2PElQAs0L7_riLouGMVoeUPfuA8W2g4VoA/viewform?embedded=true" width="350" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+        <div class="footer" style="display: none;">
+            <p>For more details and to RSVP, visit our website: <a href="https://www.example.com">www.example.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- The iframe to load the form submission response -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+<script>
+
+    const audio = document.getElementById('backgroundMusic');
+    const button = document.getElementById('floatingButton');
+
+    // Attempt to autoplay with sound after interaction
+    window.addEventListener('load', () => {
+        audio.muted = false; // Unmute on user interaction
+    }, { once: true }); // Ensures this runs only once
+
+
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            button.innerHTML = '&#10074;&#10074;'; // Pause icon
+        } else {
+            audio.pause();
+            button.innerHTML = '&#9658;'; // Play icon
+        }
+    }
+    
+    // Specify the cutoff date (e.g., November 5, 2024)
+    const cutoffDate = new Date('2024-11-21');
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Hide the form if the current date is past the cutoff date
+    if (currentDate > cutoffDate) {
+        document.getElementById("rsvpForm").style.display = "none";
+        document.getElementById("RSVPed").style.display = "none";
+        document.getElementById("finito").innerText = "RSVP ditutup";
+    }
+
+    document.getElementById("rsvpForm").addEventListener("submit", function(event) {
+        if (!validateForm()) {
+            event.preventDefault(); // Prevents form submission if validation fails
+        }
+    });
+    function submitForm() {
+        debugger;
+        const namaTetamu = document.getElementById("namaTetamu").value.trim();
+        const nomborTelefon = document.getElementById("nomborTelefon").value.trim();
+        const kehadiran = document.querySelector('input[name="entry.1117005382"]:checked');
+
+        // Validate Nama Tetamu
+        if (!namaTetamu) {
+            alert("Sila Isi Nama Tetamu.");
+            return false;
+        }
+    
+        // Validate Nombor Telefon
+        if (!nomborTelefon) {
+            alert("Sila Isi Nombor Telefon.");
+            return false;
+        }
+    
+        // Validate Kehadiran
+        if (!kehadiran) {
+            alert("Sila Isi Sahkan Kehadiran.");
+            return false;
+        }
+    
+        // If all fields are valid, allow form submission
+        document.getElementById("rsvpForm").style.display = "none";
+        document.getElementById("RSVPed").style.display = "none";
+        
+        document.getElementById("thanked").innerText = "Terima Kasih! Maklumbalas anda telah berjaya dihantar.";
+        alert("RSVP submitted!");
+
+        return true;
+    }
+    function postSubmitted() {
+        alert("RSVP submitted!");
+        document.getElementById("rsvpForm").style.display = "none";
+        document.getElementById("RSVPed").style.display = "none";
+        
+        document.getElementById("thanked").innerText = "Terima Kasih! Maklumbalas anda telah berjaya dihantar.";
+
+        // Form submission will happen naturally after this
+        return true; // Allow the form to submit
+    }
+    function togglePax(isVisible) {
+        const paxSection = document.getElementById("paxSection");
+        paxSection.style.display = isVisible ? "block" : "none";
+    }
+</script>
